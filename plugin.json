@@ -1,0 +1,10 @@
+{
+    "id": "skillcraft/core",
+    "name": "Skillcraft Core",
+    "namespace": "Skillcraft\\Core\\",
+    "provider": "Skillcraft\\Core\\Providers\\CoreServiceProvider",
+    "author": "William Troiano",
+    "url": "https://elegantmicrogreens.com",
+    "version": "1.0.0",
+    "description": "Provides classes and interfaces for Skillcraft Plugins"
+}
