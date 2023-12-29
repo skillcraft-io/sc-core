@@ -5,7 +5,7 @@ namespace Skillcraft\Core\Abstracts;
 use Skillcraft\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Model;
 
-abstract class AbstractsModuleRegistrar
+abstract class HookRegistrarAbstract
 {
     private static bool $isPlugin = true;
 
@@ -108,9 +108,9 @@ abstract class AbstractsModuleRegistrar
     }
 
     /**
-     * Retrieves the configurations for the GPT Wallet plugin.
+     * Retrieves the configurations.
      *
-     * @return array The configurations for the GPT Wallet plugin.
+     * @return array.
      */
     public static function getConfigs(): array
     {

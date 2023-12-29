@@ -2,10 +2,10 @@
 
 namespace Skillcraft\Core\Providers;
 
-use Skillcraft\Base\Supports\ServiceProvider;
-use Skillcraft\Base\Facades\PanelSectionManager;
-use Skillcraft\Base\Traits\LoadAndPublishDataTrait;
-use Skillcraft\Core\PanelSections\GPTCorePanelSection;
+use Botble\Base\Supports\ServiceProvider;
+use Skillcraft\Core\PanelSections\CorePanelSection;
+use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Botble\Base\Facades\PanelSectionManager;
 
 class CoreServiceProvider extends ServiceProvider
 {
@@ -19,9 +19,9 @@ class CoreServiceProvider extends ServiceProvider
             ->loadAndPublishTranslations();
 
         PanelSectionManager::default()
-            ->setGroupName(trans('Skillcraft Modules'))
+            ->setGroupName(trans('plugins/skillcraft-core::core.group_name'))
             ->register([
-                GPTCorePanelSection::class,
+                CorePanelSection::class,
             ]);
     }
 }

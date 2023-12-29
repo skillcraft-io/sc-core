@@ -2,12 +2,12 @@
 
 namespace Skillcraft\Core\Models;
 
-use Skillcraft\Base\Models\BaseModel;
+use Botble\Base\Models\BaseModel;
 
 /**
  * @method static \Skillcraft\Base\Models\BaseQueryBuilder<static> query()
  */
-class GPTCore extends BaseModel
+class CoreModel extends BaseModel
 {
     //
 }
