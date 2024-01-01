@@ -1,4 +1,8 @@
-# Trend
+# Skillcraft Core
+
+Skillcraft Core for Botble CMS: Seamlessly unite all our plugins within Botble CMS. Simplify development & enhance UX. A must-have foundation!
+
+# Trend Usage
 
 Generate trends for your models. Easily generate charts or reports.
 
