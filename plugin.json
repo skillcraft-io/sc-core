@@ -6,5 +6,5 @@
     "author": "William Troiano",
     "url": "https://elegantmicrogreens.com",
     "version": "1.0.0",
-    "description": "Provides classes and interfaces for Skillcraft Plugins"
+    "description": "Common Classes for Skillcraft Plugins"
 }

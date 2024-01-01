@@ -9,8 +9,8 @@ class CorePanelSection extends PanelSection
     public function setup(): void
     {
         $this
-            ->setId('skillcraft.panelsection.core')
+            ->setId(SKILLCRAFT_CORE_PANELSECTION_NAME)
             ->setTitle(trans('plugins/skillcraft-core::core.panelsection_title'))
-            ->withPriority(99998);
+            ->withPriority(99999);
     }
 }
