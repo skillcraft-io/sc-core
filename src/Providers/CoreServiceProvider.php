@@ -3,9 +3,9 @@
 namespace Skillcraft\Core\Providers;
 
 use Botble\Base\Supports\ServiceProvider;
-use Skillcraft\Core\PanelSections\CorePanelSection;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
 use Botble\Base\Facades\PanelSectionManager;
+use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Skillcraft\Core\PanelSections\CorePanelSection;
 
 class CoreServiceProvider extends ServiceProvider
 {
