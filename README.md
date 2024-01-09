@@ -1,3 +1,16 @@
+## Skillcraft Core
+
+
+This plugin provides functions and classes consumed by many of our plugings and a flexible way to manage our plugins. The plugin does not provide any feature directly and is only required if using one of our free or paid plugins.
+
+
+## Requirements
+
+- Botble core 7.0.0 or higher.
+
+
+## Provided Trending Functions
+
 # Trend
 
 Generate trends for your models. Easily generate charts or reports.

@@ -4,7 +4,7 @@
     "namespace": "Skillcraft\\Core\\",
     "provider": "Skillcraft\\Core\\Providers\\CoreServiceProvider",
     "author": "William Troiano",
-    "url": "https://elegantmicrogreens.com",
+    "url": "https://github.com/skillcraft-io",
     "version": "1.1.0",
     "description": "Common Classes for Skillcraft Plugins"
 }
