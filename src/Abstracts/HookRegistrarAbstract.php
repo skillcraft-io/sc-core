@@ -2,7 +2,7 @@
 
 namespace Skillcraft\Core\Abstracts;
 
-use Skillcraft\Base\Models\BaseModel;
+use Skillcraft\Core\Models\CoreModel as BaseModel;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class HookRegistrarAbstract
@@ -104,7 +104,7 @@ abstract class HookRegistrarAbstract
             $model = get_class($model);
         }
 
-        return in_array($model, self::getSupportedHooks());
+        return array_key_exists($model, self::getSupportedHooks());
     }
 
     /**
