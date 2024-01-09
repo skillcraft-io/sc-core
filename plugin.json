@@ -5,6 +5,6 @@
     "provider": "Skillcraft\\Core\\Providers\\CoreServiceProvider",
     "author": "William Troiano",
     "url": "https://elegantmicrogreens.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Common Classes for Skillcraft Plugins"
 }
