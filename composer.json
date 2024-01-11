@@ -1,5 +1,0 @@
-{
-    "require": {
-        "facebook/php-business-sdk": "^18.0"
-    }
-}
