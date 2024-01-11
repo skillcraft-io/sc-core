@@ -34,7 +34,9 @@ abstract class HookRegistrarAbstract
 
     public static function getConfigPath(): string
     {
-        return (self::isPluginModule()) ? 'plugins.' : 'packages.'. self::getModuleName().'.'.self::getConfigFile();
+        $module = (self::isPluginModule()) ? 'plugins.' : 'packages.';
+
+        return $module . static::getModuleName().'.'.self::getConfigFile();
     }
     
     public static function getSupportedConfigPath():string
