@@ -26,12 +26,16 @@ class CoreModel extends BaseModel
             do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_DELETED, $model);
         });
 
-        static::restored(function (CoreModel $model) {
-            do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_RESTORED, $model);
-        });
-
-        static::forceDeleted(function (CoreModel $model) {
-            do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_FORCE_DELETED, $model);
-        });
+        if (method_exists(static::class, 'restored')) {
+            static::restored(function (CoreModel $model) {
+                  do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_RESTORED, $model);
+            });
+        }
+  
+        if (method_exists(static::class, 'forceDeleted')) {
+            static::forceDeleted(function (CoreModel $model) {
+                do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_FORCE_DELETED, $model);
+            });
+        }
     }
 }
