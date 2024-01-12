@@ -66,10 +66,10 @@ abstract class HookRegistrarAbstract
 
     public static function load():void
     {
-        self::addMacroHooks();
-        self::addFilterHooks();
-        self::addActionHooks();
-        self::addToModuleRegistrar();
+        static::addMacroHooks();
+        static::addFilterHooks();
+        static::addActionHooks();
+        static::addToModuleRegistrar();
     }
 
     public static function registerHooks(array|string $model, string $name): void

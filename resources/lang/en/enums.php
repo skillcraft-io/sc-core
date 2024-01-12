@@ -1,5 +1,6 @@
 <?php
 
+use Skillcraft\Core\Enums\SimpleStatusEnum;
 use Skillcraft\Core\Enums\UnitMeasureEnum;
 
 return [
@@ -11,4 +12,8 @@ return [
         UnitMeasureEnum::MILLIGRAM => 'Milligram',
         UnitMeasureEnum::EACH => 'Each',
     ],
+    'simple_status' => [
+        SimpleStatusEnum::ACTIVE => 'Active',
+        SimpleStatusEnum::INACTIVE => 'Inactive',
+    ]
 ];
