@@ -19,29 +19,29 @@ abstract class HookRegistrarAbstract
 
     public static function isPluginModule():bool
     {
-        return self::$isPlugin;
+        return static::$isPlugin;
     }
 
     public static function getConfigFile():string
     {
-        return self::$configFile;
+        return static::$configFile;
     }
 
     public static function getSupportedKey():string
     {
-        return self::$supportedKey;
+        return static::$supportedKey;
     }
 
     public static function getConfigPath(): string
     {
-        $module = (self::isPluginModule()) ? 'plugins.' : 'packages.';
+        $module = (static::isPluginModule()) ? 'plugins.' : 'packages.';
 
-        return $module . static::getModuleName().'.'.self::getConfigFile();
+        return $module . static::getModuleName().'.'.static::getConfigFile();
     }
     
     public static function getSupportedConfigPath():string
     {
-        return self::getConfigPath().'.'.self::getSupportedKey();
+        return static::getConfigPath().'.'.static::getSupportedKey();
     }
 
     protected static function addMacroHooks():void
@@ -106,7 +106,7 @@ abstract class HookRegistrarAbstract
             $model = get_class($model);
         }
 
-        return array_key_exists($model, self::getSupportedHooks());
+        return array_key_exists($model, static::getSupportedHooks());
     }
 
     /**
@@ -116,6 +116,6 @@ abstract class HookRegistrarAbstract
      */
     public static function getConfigs(): array
     {
-        return config(self::getConfigPath(), []);
+        return config(static::getConfigPath(), []);
     }
 }
