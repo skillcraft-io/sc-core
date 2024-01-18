@@ -13,15 +13,15 @@ class CoreServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this
-        ->setNamespace('plugins/sc-core')
-        ->loadHelpers()
-        ->loadAndPublishTranslations()
-        ->loadAndPublishConfigurations(['general']);
+            ->setNamespace('plugins/sc-core')
+            ->loadHelpers()
+            ->loadAndPublishTranslations()
+            ->loadAndPublishConfigurations(['general']);
 
         PanelSectionManager::default()
-        ->setGroupName(trans('plugins/sc-core::core.group_name'))
-        ->register([
-            CorePanelSection::class,
-        ]);
+            ->setGroupName(trans('plugins/sc-core::core.group_name'))
+            ->register([
+                CorePanelSection::class,
+            ]);
     }
 }
