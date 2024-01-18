@@ -13,13 +13,13 @@ class CoreServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this
-        ->setNamespace('plugins/skillcraft-core')
+        ->setNamespace('plugins/sc-core')
         ->loadHelpers()
         ->loadAndPublishTranslations()
         ->loadAndPublishConfigurations(['general']);
 
         PanelSectionManager::default()
-        ->setGroupName(trans('plugins/skillcraft-core::core.group_name'))
+        ->setGroupName(trans('plugins/sc-core::core.group_name'))
         ->register([
             CorePanelSection::class,
         ]);

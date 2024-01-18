@@ -1,5 +1,5 @@
 {
-    "id": "skillcraft/core",
+    "id": "skillcraft/sc-core",
     "name": "Skillcraft Core",
     "namespace": "Skillcraft\\Core\\",
     "provider": "Skillcraft\\Core\\Providers\\CoreServiceProvider",

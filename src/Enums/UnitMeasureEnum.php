@@ -23,7 +23,7 @@ class UnitMeasureEnum extends Enum
     const MILLIGRAM = 'milligram';
     const EACH = 'each';
 
-    public static $langPath = 'plugins/skillcraft-core::enums.unit_measures';
+    public static $langPath = 'plugins/sc-core::enums.unit_measures';
 
     public function toHtml(): string|HtmlString
     {

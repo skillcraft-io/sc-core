@@ -15,7 +15,7 @@ class SimpleStatusEnum extends Enum
     public const ACTIVE = 'active';
     public const INACTIVE = 'inactive';
 
-    public static $langPath = 'plugins/skillcraft-core::enums.simple_status';
+    public static $langPath = 'plugins/sc-core::enums.simple_status';
 
     public function toHtml(): string|HtmlString
     {
