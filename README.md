@@ -13,7 +13,7 @@ Skillcraft Core for Botble CMS: Seamlessly unite all our plugins within Botble C
 - Important:
   "You should disable & remove the "Skillcraft Core" plugin if previously installed. As of v2.0.0, we have renmaed the folder to "sc-core".
 
-Go to the **Admin Panel** and click on the **Plugins** tab. Click on the "Add new" button, find the **Daily Dos** plugin and click on the "Install" button.
+Go to the **Admin Panel** and click on the **Plugins** tab. Click on the "Add new" button, find the **Skillcraft Core** plugin and click on the "Install" button.
 
 
 **Install manually**
