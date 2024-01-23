@@ -27,7 +27,7 @@ class CoreServiceProvider extends ServiceProvider
             ->setNamespace('plugins/sc-core')
             ->loadHelpers()
             ->loadAndPublishTranslations()
-            ->loadAndPublishConfigurations(['general'])
+            ->loadAndPublishConfigurations(['general', 'money'])
             ->loadAndPublishViews();
 
         PanelSectionManager::default()
