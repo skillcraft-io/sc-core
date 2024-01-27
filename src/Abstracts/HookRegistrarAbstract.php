@@ -2,8 +2,8 @@
 
 namespace Skillcraft\Core\Abstracts;
 
-use Skillcraft\Core\Models\CoreModel as BaseModel;
 use Illuminate\Database\Eloquent\Model;
+use Skillcraft\Core\Models\CoreModel as BaseModel;
 
 abstract class HookRegistrarAbstract
 {
@@ -13,21 +13,21 @@ abstract class HookRegistrarAbstract
 
     private static string $supportedKey = 'supported';
 
-    abstract public static function getScreenName():string;
+    abstract public static function getScreenName(): string;
 
-    abstract public static function getModuleName():string;
+    abstract public static function getModuleName(): string;
 
-    public static function isPluginModule():bool
+    public static function isPluginModule(): bool
     {
         return static::$isPlugin;
     }
 
-    public static function getConfigFile():string
+    public static function getConfigFile(): string
     {
         return static::$configFile;
     }
 
-    public static function getSupportedKey():string
+    public static function getSupportedKey(): string
     {
         return static::$supportedKey;
     }
@@ -36,35 +36,35 @@ abstract class HookRegistrarAbstract
     {
         $module = (static::isPluginModule()) ? 'plugins.' : 'packages.';
 
-        return $module . static::getModuleName().'.'.static::getConfigFile();
-    }
-    
-    public static function getSupportedConfigPath():string
-    {
-        return static::getConfigPath().'.'.static::getSupportedKey();
+        return $module . static::getModuleName() . '.' . static::getConfigFile();
     }
 
-    protected static function addMacroHooks():void
+    public static function getSupportedConfigPath(): string
     {
-        //
+        return static::getConfigPath() . '.' . static::getSupportedKey();
     }
 
-    protected static function addFilterHooks():void
+    protected static function addMacroHooks(): void
     {
         //
     }
 
-    protected static function addActionHooks():void
+    protected static function addFilterHooks(): void
     {
         //
     }
 
-    protected static function addToModuleRegistrar():void
+    protected static function addActionHooks(): void
     {
         //
     }
 
-    public static function load():void
+    protected static function addToModuleRegistrar(): void
+    {
+        //
+    }
+
+    public static function load(): void
     {
         static::addMacroHooks();
         static::addFilterHooks();

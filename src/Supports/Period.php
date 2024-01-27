@@ -2,9 +2,9 @@
 
 namespace Skillcraft\Core\Supports;
 
+use Botble\Analytics\Exceptions\InvalidPeriod;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
-use Botble\Analytics\Exceptions\InvalidPeriod;
 
 class Period
 {

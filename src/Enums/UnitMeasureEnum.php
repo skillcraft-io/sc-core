@@ -2,7 +2,6 @@
 
 namespace Skillcraft\Core\Enums;
 
-use Botble\Base\Facades\Html;
 use Botble\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
@@ -16,12 +15,12 @@ use Illuminate\Support\HtmlString;
  */
 class UnitMeasureEnum extends Enum
 {
-    const LBS = 'lbs';
-    const OUNCE = 'ounce';
-    const GRAM = 'gram';
-    const KILOGRAM = 'kilogram';
-    const MILLIGRAM = 'milligram';
-    const EACH = 'each';
+    public const LBS = 'lbs';
+    public const OUNCE = 'ounce';
+    public const GRAM = 'gram';
+    public const KILOGRAM = 'kilogram';
+    public const MILLIGRAM = 'milligram';
+    public const EACH = 'each';
 
     public static $langPath = 'plugins/sc-core::enums.unit_measures';
 

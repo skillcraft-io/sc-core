@@ -2,7 +2,6 @@
 
 namespace Skillcraft\Core\Exceptions;
 
-use DateTimeInterface;
 use Exception;
 
 class CannotDeactivateCore extends Exception
