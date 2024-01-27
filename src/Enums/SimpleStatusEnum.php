@@ -7,8 +7,8 @@ use Botble\Base\Supports\Enum;
 use Illuminate\Support\HtmlString;
 
 /**
- * @method static BaseStatusEnum ACTIVE()
- * @method static BaseStatusEnum INACTIVE()
+ * @method static SimpleStatusEnum ACTIVE()
+ * @method static SimpleStatusEnum INACTIVE()
  */
 class SimpleStatusEnum extends Enum
 {

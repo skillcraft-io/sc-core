@@ -2,11 +2,11 @@
 
 namespace Skillcraft\Core\Supports\Trend;
 
-use Error;
 use Carbon\CarbonPeriod;
+use Error;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use Illuminate\Database\Eloquent\Builder;
 use Skillcraft\Core\Supports\Trend\Adapters\MySqlAdapter;
 use Skillcraft\Core\Supports\Trend\Adapters\PgsqlAdapter;
 use Skillcraft\Core\Supports\Trend\Adapters\SqliteAdapter;

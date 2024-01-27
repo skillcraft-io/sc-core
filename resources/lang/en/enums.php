@@ -15,5 +15,5 @@ return [
     'simple_status' => [
         SimpleStatusEnum::ACTIVE => 'Active',
         SimpleStatusEnum::INACTIVE => 'Inactive',
-    ]
+    ],
 ];

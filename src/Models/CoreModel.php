@@ -5,12 +5,12 @@ namespace Skillcraft\Core\Models;
 use Botble\Base\Models\BaseModel;
 
 /**
- * @method static \Skillcraft\Base\Models\BaseQueryBuilder<static> query()
+ * @method static \Botble\Base\Models\BaseQueryBuilder<static> query()
  */
 class CoreModel extends BaseModel
 {
     //
-    protected static function booted()
+    protected static function booted(): void
     {
         parent::booted();
 
@@ -28,10 +28,10 @@ class CoreModel extends BaseModel
 
         if (method_exists(static::class, 'restored')) {
             static::restored(function (CoreModel $model) {
-                  do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_RESTORED, $model);
+                do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_RESTORED, $model);
             });
         }
-  
+
         if (method_exists(static::class, 'forceDeleted')) {
             static::forceDeleted(function (CoreModel $model) {
                 do_action(ACTION_HOOK_SKILLCRAFT_CORE_MODEL_AFTER_FORCE_DELETED, $model);
