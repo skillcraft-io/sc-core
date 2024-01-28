@@ -13,7 +13,7 @@ use Illuminate\Validation\ValidationException;
 class CoreModel extends BaseModel
 {
     //
-    protected static function booted()
+    protected static function booted(): void
     {
         parent::booted();
 
